@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: MOBYDICK_production
-  username: MOBYDICK
-  password: <%= ENV['MOBYDICK_DATABASE_PASSWORD'] %>
+  username: mobydick
+  password: billabong
