@@ -3,7 +3,7 @@ server '103.42.225.115', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:cameronleake/mobydick.git'
 set :application,     'mobydick'
-set :user,            'deploy'
+set :user,            'deployer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
