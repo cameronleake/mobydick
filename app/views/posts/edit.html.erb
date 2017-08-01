@@ -1,0 +1,14 @@
+<%= render 'shared/header' %>
+
+<div class="container">
+	<h1>Edit Post</h1>
+
+	<%= form_for @post do |f| %>
+        <%= render 'posts/form', f: f  %>
+	<% end %>
+
+	<div class="clearfix">
+		<%= link_to 'Return to All Posts', root_path, class: 'btn btn-secondary float-right' %>
+	</div>
+
+</div>

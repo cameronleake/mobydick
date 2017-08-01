@@ -1,0 +1,26 @@
+    <div class="post-preview">
+        
+        <%= link_to post_path(post) do %>
+            <h2 class="post-title">
+                <%= post.title %>
+            </h2>
+            <h3 class="post-subtitle">
+                <%= post.subtitle %>
+            </h3>
+        <% end %>
+        <p class="post-meta">
+            Posted by Cameron Leake on <%= post.date %>
+        </p>
+        <div class="clearfix">
+            <div class="btn-group btn-group-sm float-right" role="group">
+                <button type="button" class="btn btn-secondary btn-sm">
+                    <%= link_to 'Edit', edit_post_path(post), class: 'float-right' %>
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm">
+                    <%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'float-right' %>
+                </button>
+            </div>
+        </div>
+    
+    </div>
+    <hr>

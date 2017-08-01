@@ -1,0 +1,29 @@
+	<% if @post.errors.any? %>
+		<div class="alert alert-danger" role="alert">
+				<strong><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved: </strong>
+			<ul>
+				<% @post.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</p>
+
+	<p>
+		<%= f.label :subtitle %>
+		<%= f.text_field :subtitle %>
+	</p>
+
+	<p>
+		<%= f.label :preview %>
+		<%= f.text_area :preview %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
