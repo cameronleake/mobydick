@@ -1,11 +1,20 @@
-    <div class="media mb-4">
-        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-        <div class="media-body">
-            <h5 class="mt-0">
-                <%= comment.commenter %>
-            </h5>
-            <%= comment.body %>
-            <%= comment.datetime %>
-            <%= link_to 'Delete Comment', [comment.post, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class="card">
+        <div class="card-block">
+
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src=<%= asset_path ('avatar-icon-default.png') %> alt="">
+                <div class="media-body">
+                    <h5 class="mt-0">
+                        <%= comment.commenter %>
+                    </h5>
+                    <%= comment.body %> 
+                    <hr>
+                    <h6 class="card-subtitle">
+                        <%= comment.datetime %> | 
+                        <%= link_to 'Delete Comment', [comment.post, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
+                    </h6>
+                </div>
+            </div>
+
         </div>
     </div>
