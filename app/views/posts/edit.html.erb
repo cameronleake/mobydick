@@ -3,7 +3,7 @@
 <div class="container">
 	<h1>Edit Post</h1>
 
-	<%= form_for @post do |f| %>
+	<%= bootstrap_form_for @post, html: { multipart: true } do |f| %>
         <%= render 'posts/form', f: f  %>
 	<% end %>
 

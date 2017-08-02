@@ -35,6 +35,12 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
+gem 'ckeditor'
+gem 'paperclip'
+gem 'bootstrap_form'
+gem 'carrierwave'
+gem 'image_magick'
+gem 'mini_magick'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

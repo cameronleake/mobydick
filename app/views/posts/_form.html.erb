@@ -9,21 +9,10 @@
 		</div>
 	<% end %>
 
-	<p>
-		<%= f.label :title %>
-		<%= f.text_field :title %>
-	</p>
-
-	<p>
-		<%= f.label :subtitle %>
-		<%= f.text_field :subtitle %>
-	</p>
-
-	<p>
-		<%= f.label :preview %>
-		<%= f.text_area :preview %>
-	</p>
-
-	<p>
-		<%= f.submit %>
-	</p>
+	<%= f.text_field :title %>
+	<%= f.text_field :subtitle %>
+	<%= f.cktext_area :preview %>
+	<div class="field">
+		<%= f.file_field :image %>
+	</div>
+	<p><%= f.submit %></p>
